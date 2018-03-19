@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="public/CSS/main.css">
+
+  <title>Сеть магазинов "Уют"</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #693015">
+    <div class="container-fluid mx-2 mx- mx-xl-5">
+      <a href="index.html" class="navbar-brand">
+                <img src="public/images/logo_3.jpg" height="40px" alt="logo">
+            </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"><a href="index" class="nav-link">Главная</a></li>
+          <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent"><a href="index#akzia" class="nav-link">Акции</a></li>
+          <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent"><a href="#footer" class="nav-link">Контакты</a></li>
+          <li class="nav-item">
+            <div class="btn-group d-block">
+              <div class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Категории товаров<span class="sr-only">Toggle Dropdown</span>
+              </div>
+              <div id="dropCollapse" class="dropdown-menu" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="dropdown-item">Бытовая химия</span>
+                <span class="dropdown-item">Канцтовары</span>
+                <span class="dropdown-item">Детские товары</span>
+                <span class="dropdown-item">Игрушки</span>
+                <span class="dropdown-item">Трикотаж</span>
+                <span class="dropdown-item">Сувениры</span>
+                <span class="dropdown-item">Средства гигиены,<br>косметика</span>
+                <span class="dropdown-item">Товары для дома</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="clr_br p-2 px-sm-5 mt-5">
+    <hr/>
+    <h2 class="modal-lnk">Создание отзыва</h2>
+    <hr/>
+    <form id="form" class="jumbotron" action="/feedback_complete">
+      <div class="form-group">
+        <label class="form-contol-label" for="name">Ваше имя: </label>
+        <input name="name" id="name" type="text" class="form-control form-control-danger" placeholder="Иван Иванов" aria-label="Name" required>
+      </div>
+      <div class="form-group has-warning">
+        <label class="form-contol-label" for="email">Адрес электронной почты (необязательно):</label>
+        <input name="email" id="email" type="email" class="form-control" placeholder="example@email.com" aria-label="E-mail">
+        <div class="invalid-feedback">Введите действительный e-mail</div>
+      </div>
+      <div class="form-group">
+        <label class="form-contol-label" for="reqbody">Отзыв:</label>
+        <input name="reqbody" id="reqbody" type="text" class="form-control mb-3" aria-label="text" placeholder="Не более 1000 символов" required>
+      </div>
+      <button type="submit" id="submit" class="btn btn-outline-success my-2 my-sm-0">Отправить</button>
+    </form>
+  </div>
+  <footer id="footer" class="container-fluid m-2 mx-sm-5">
+    <div id="footdiv">
+      <hr/>
+      <p class="specification"><b>Контактная информация:</b><br>(342)2941389<br>example@email.com</p>
+      <hr/>
+      <p class="specification"><b>Адреса наших магазинов:</b><br>г. Пермь<br>Вильямса 37<br>Вильямса 49а<br>Кабельщиков 85<br>Трясолобова 73</p>
+      <p></p>
+      <hr/>
+      <button class="btn btn-info mb-2"><a class="modal-lnk" href="index">Вернуться на главную &raquo;</a></button>
+      <br>
+      <a class="specification" href="request">Сообщить об ошибке на сайте &raquo;</a>
+      <hr/>
+      <p class="specification">&copy; Сеть магазинов бытовой химии, косметики, парфюмерии "Уют", 2018<span align="right"></span></p>
+      <hr/>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="public/JS/feedback.js"></script>
+</body>
+
+</html>

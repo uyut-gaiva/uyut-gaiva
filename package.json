@@ -1,0 +1,21 @@
+{
+  "name": "yut",
+  "version": "1.0.0",
+  "description": "uyut",
+  "main": "script.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "nodemailer": "^4.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "uyut",
+    "gaiva"
+  ],
+  "author": "Nikita Ardashev",
+  "license": "ISC"
+}
